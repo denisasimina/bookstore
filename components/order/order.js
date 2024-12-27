@@ -53,7 +53,7 @@ console.log(index,"hhhhhhhhhhhhhhhhhhhhh")
             
               {
                 cart.products.map((item,index)=>
-                (<li>
+                (<li  key={item.id || itemIndex}> 
                   
 
                     <div>
