@@ -42,6 +42,7 @@ export default function Menu({ categories, selected, products }) {
             <div className={styles.category}>
             {products.map((product) => (
               <CardProduct
+              key={product.id}
                 product={product}
                 selected={selected}
                 // onQuantityChange={onQuantityChange}
@@ -58,7 +59,8 @@ export default function Menu({ categories, selected, products }) {
             <ul>
               {categories.map((item) => (
                 <li
-                  key={item.name} 
+                key={item.id || item.name}
+                  // key={item.name} 
                   className={styles.item}
                   onClick={HandleChange}
                 >
