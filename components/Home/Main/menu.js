@@ -24,7 +24,7 @@ const OnCategory=(e)=>{
       <ul>
         {categories.map((item) => (
           <li onClick={OnCategory} 
-         
+          key={item._id}
           className={styles.item}
           >{item.name}</li>
         ))}
