@@ -1,0 +1,51 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px; 
+    height: 50px;
+ margin-top:20px;
+
+    background-color: $color-primary;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+
+
+    .svg_wrap {
+        display: flex;
+        align-items: center;
+
+        
+      
+     
+        
+
+        button{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-primary;
+            font-size: 23px;
+            
+            color:$white;
+        }
+        
+        
+    
+      
+        
+    }
+    
+  
+
+}
+.button:hover{
+    background-color: $color-shadow;
+
+    .svg_wrap{ button{
+        background-color: $color-shadow;
+
+    }
+}}

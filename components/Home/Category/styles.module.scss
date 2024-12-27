@@ -1,0 +1,71 @@
+.category{
+
+    display: flex;
+    flex-direction: column;
+    
+  
+      
+
+    .container{
+        
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       place-items: center;
+    
+    }
+}
+
+/// CARD-CATEGORY -----------------------------
+.cardCategory {
+    .container {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      height: 400px;
+      width: 300px;
+      background-color: $white;
+      margin: 20px;
+      justify-content: center;
+      align-items: center;
+  
+      .author,
+      .title {
+        cursor: pointer;
+      }
+  
+      .title {
+        cursor: pointer;
+        overflow: hidden; /* Ascunde textul care depășește limitele */
+        text-overflow: ellipsis; /* Adaugă punctele-puncte (...) */
+        white-space: nowrap; /* Menține textul pe un singur rând */
+        width: 100%; /* Asigură o lățime fixă pentru trunchiere */
+        max-width: 250px; /* Specifică limita pentru punctele-puncte */
+      }
+  
+      .title:hover {
+        text-decoration: underline;
+      }
+  
+      img {
+        width: 200px;
+        height: 300px;
+        justify-content: center;
+        cursor: pointer;
+      }
+  
+      button {
+        display: flex;
+        width: 200px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 25px;
+      }
+  
+      button:hover {
+        background-color: $color-primary;
+        color: $white;
+        border: none;
+      }
+    }
+  }
+  

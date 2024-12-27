@@ -1,0 +1,94 @@
+.menu {
+    grid-area: menu;
+    display: flex;
+padding-left: 5px;
+    justify-content: start;
+    align-items: start;
+    padding :5px;
+
+    background-color: #f0f0f0; /* Culoare de fundal pentru testare */
+  }
+  
+  .menu_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asigură că ocupă întreaga lățime a zonei de meniu */
+  
+  li{
+    color:gray;
+  }
+
+  li:hover{
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+
+  }
+
+}  
+
+////////////////////////////////
+.category{
+
+  
+
+    
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 10fr 1fr;
+      grid-template-areas:
+        "menu header2 header2"
+        "menu category category"
+        "menu category category";
+      gap: 10px;
+      margin: 5px;
+      height: 100%;
+    }
+    
+    .header2{
+
+        display: flex;
+      grid-area: header2;
+      min-height: 40px;
+      justify-content: center;
+      place-items: center;
+      font-size: 25px;
+      padding-top:10px;
+   
+    }
+    align-items: center;
+    
+    .category {
+      grid-area: category;
+      max-height: 4000px;
+      display: flex;
+      flex-direction: column;
+      
+      
+  
+    
+          
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+         place-items: center;
+      
+     
+     
+    }
+    
+    .menu {
+      grid-area: menu;
+      max-width: 110px;
+    
+    }
+    
+  }
+  
+ 
+  
+ 
+
+
+
+  

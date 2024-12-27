@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .number {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .arrows {
+    display: flex;
+    flex-direction: column; /* Săgețile vor fi una sub alta */
+    align-items: center;
+  }
+  
+  .arrow {
+    font-size: 24px; /* Dimensiunea săgeților */
+    cursor: pointer;
+    color: #333; /* Culoarea săgeților */
+  }
+  
+  .arrow:hover {
+    color: #555; /* Culoare la hover */
+  }
+  

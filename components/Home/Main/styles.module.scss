@@ -1,0 +1,151 @@
+
+
+.container_ {
+  display: grid;
+  grid-template-columns: 1fr 13fr; /* Proporție mărită pentru coloana a doua */
+  grid-template-areas:
+    "menu header"
+    "menu swiper"
+    "menu offers";
+  gap: 10px;
+  margin:0;
+
+
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #f0f0f0;
+  padding: 10px;
+  min-height: 700px;
+
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  grid-area: header;
+  padding: 10px;
+  margin-left: 20px; 
+  font-size: 20px;
+  align-items: center;
+}
+
+.swiper {
+  grid-area: swiper;
+  border: 1px solid blue;
+  width: 100%;
+  height: 100%; 
+}
+
+.offers {
+  grid-area: offers;
+  padding: 10px;
+  height: 250px; /* Poți ajusta această valoare */
+  overflow: hidden;
+}
+
+
+///////SWIPER-----------------------------------
+
+  .myswiper {
+   
+    width: 100%;          
+    max-width: 1300px; 
+    max-height: 590px;  
+    height: 100%;       
+    margin: 0 auto;      
+    background-color: #f0f0f0;  
+    position: relative;  
+  
+    .mySwiper {
+        width: 100%;
+        height: 100%;
+        position: relative; 
+      }
+
+
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+      }
+      .swiper-button-next, .swiper-button-prev {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.5);  /* Fundal ușor transparent */
+      }
+      .swiper-button-next:hover, .swiper-button-prev:hover {
+        background: rgba(0, 0, 0, 0.8);  /* Schimbă fundalul la hover */
+      }
+    
+
+}
+  
+
+
+
+  .category{
+
+  
+
+    
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+        "menu header2 header2"
+        "menu category category"
+        "menu category category";
+      gap: 10px;
+      margin: 5px;
+      height: 100%;
+    }
+    
+    .header2{
+      grid-area: header2;
+      min-height: 40px;
+      background-color: aqua;
+    }
+    
+    .category {
+      grid-area: category;
+      max-height: 4000px;
+     
+    }
+    
+    .menu {
+      grid-area: menu;
+    
+    }
+    
+  }
+  
+ 
+  
+ 
+
+
+
+  
+  
+
+
+
+
+
+  

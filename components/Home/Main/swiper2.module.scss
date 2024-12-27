@@ -1,0 +1,54 @@
+.offers_container {
+    min-height: 250px;
+    background-color: turquoise;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position:relative;
+    background:url('/background.png');
+
+
+
+    img{
+        display: flex;
+        height:200px;
+        align-items: center;
+        justify-content: center;
+        margin:20px;
+        margin-left: 70px;;
+
+        
+    }
+    .custom_next, .custom_prev {
+        position: absolute;
+        top: 50%; /* Centrează vertical */
+        transform: translateY(-50%); /* Corectează centrare */
+        z-index: 10; /* Asigură-te că săgețile sunt deasupra imaginii */
+        cursor: pointer;
+    }
+
+.custom_next{
+    right:10px;
+    position:absolute;
+   
+}
+
+.custom_prev{
+    left:10px;
+}
+
+    .custom_prev,.custom_next {
+    display: flex;
+    color:white;
+
+
+   svg{
+    display: flex;
+    height:30px;
+    width: 30px;;
+   }
+
+
+    }
+}

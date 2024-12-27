@@ -1,0 +1,30 @@
+.countdown{
+
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap:2px;
+
+    margin-left: auto;
+ 
+   
+
+    span{
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 27px;
+        padding: 5px;
+        background-color: black;
+        
+
+      
+      
+    }
+    span:last-of-type{
+        display: flex;
+        margin-right: 10px;
+    }
+  
+
+ 
+}

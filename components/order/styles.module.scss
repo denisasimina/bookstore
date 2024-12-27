@@ -1,0 +1,97 @@
+.order {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .row span {
+    margin-left: 5px;
+  }
+  
+  .details {
+    margin-top: 10px;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  
+  .products {
+    margin-top: 10px;
+  }
+  
+  .products ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .products li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .products li .imageWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    width:20px;
+    height: 30px;
+    align-items: center;
+
+  }
+  
+  .products li div {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .products li div span {
+    margin-right: 10px;
+   
+    width:100%;
+  }
+ 
+  
+  .products li div span:first-child {
+    margin-left: 0; 
+  }
+  .products li div span:nth-child(2) {
+    margin-left: -50px; 
+  }
+  
+  .products li img {
+    width: 50px; 
+    height: auto;
+    margin-left: 50px; 
+ 
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    opacity: 0.7;
+  }
+  

@@ -1,0 +1,178 @@
+[
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d01" },
+    "name": "Fiction",
+    "slug": "fiction",
+    "createdAt": { "$date": "2023-01-01T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-01T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d02" },
+    "name": "Non-Fiction",
+    "slug": "non-fiction",
+    "createdAt": { "$date": "2023-01-02T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-02T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d03" },
+    "name": "Science",
+    "slug": "science",
+    "createdAt": { "$date": "2023-01-03T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-03T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d04" },
+    "name": "History",
+    "slug": "history",
+    "createdAt": { "$date": "2023-01-04T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-04T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d05" },
+    "name": "Biography",
+    "slug": "biography",
+    "createdAt": { "$date": "2023-01-05T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-05T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d06" },
+    "name": "Children's Books",
+    "slug": "childrens-books",
+    "createdAt": { "$date": "2023-01-06T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-06T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d07" },
+    "name": "Self-Help",
+    "slug": "self-help",
+    "createdAt": { "$date": "2023-01-07T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-07T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d08" },
+    "name": "Health & Wellness",
+    "slug": "health-wellness",
+    "createdAt": { "$date": "2023-01-08T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-08T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d09" },
+    "name": "Business & Economics",
+    "slug": "business-economics",
+    "createdAt": { "$date": "2023-01-09T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-09T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d10" },
+    "name": "Art & Photography",
+    "slug": "art-photography",
+    "createdAt": { "$date": "2023-01-10T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-10T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d11" },
+    "name": "Personal Development",
+    "slug": "personal-development",
+    "createdAt": { "$date": "2023-01-21T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-21T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d12" },
+    "name": "Psychology",
+    "slug": "psychology",
+    "createdAt": { "$date": "2023-01-22T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-22T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d13" },
+    "name": "Philosophy",
+    "slug": "philosophy",
+    "createdAt": { "$date": "2023-01-27T12:00:00Z" },
+    "updatedAt": { "$date": "2023-01-27T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d14" },
+    "name": "Adventure",
+    "slug": "adventure",
+    "createdAt": { "$date": "2023-02-01T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-01T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d15" },
+    "name": "Mystery & Thriller",
+    "slug": "mystery-thriller",
+    "createdAt": { "$date": "2023-02-02T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-02T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d16" },
+    "name": "Fantasy",
+    "slug": "fantasy",
+    "createdAt": { "$date": "2023-02-03T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-03T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d17" },
+    "name": "Romance",
+    "slug": "romance",
+    "createdAt": { "$date": "2023-02-04T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-04T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d18" },
+    "name": "Horror",
+    "slug": "horror",
+    "createdAt": { "$date": "2023-02-05T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-05T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d19" },
+    "name": "Science Fiction",
+    "slug": "science-fiction",
+    "createdAt": { "$date": "2023-02-06T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-06T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d20" },
+    "name": "Literature",
+    "slug": "literature",
+    "createdAt": { "$date": "2023-02-07T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-07T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d21" },
+    "name": "Cookbooks",
+    "slug": "cookbooks",
+    "createdAt": { "$date": "2023-02-08T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-08T12:00:00Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "64cbfa1f1e3c9a006b4a3d22" },
+    "name": "Travel",
+    "slug": "travel",
+    "createdAt": { "$date": "2023-02-09T12:00:00Z" },
+    "updatedAt": { "$date": "2023-02-09T12:00:00Z" },
+    "__v": 0
+  }
+]

@@ -1,0 +1,55 @@
+.flashDeals{
+    display: flex;
+box-sizing: border-box;
+height: 70px;
+width: 100%;
+background-color:orange;
+align-items: center;
+color:$white;
+
+&_header{
+    
+margin-left: 20px;
+}
+
+
+}
+
+//CARD-------------------------
+.cards{
+margin-top:10px;
+display: flex;
+flex-direction: column;
+gap:10px;
+    .card_img{
+        display: flex;
+        margin-left:20px;
+      img{
+        display: flex;
+        height:300px;
+        width:200px;
+      }
+
+      .flash{
+        display: flex;
+        position:absolute;
+        border-radius: 1px;
+        background-color: orange;
+      }
+    }
+    .card_price{
+        font-size: 20px;
+       span{
+
+       margin-right:10px;
+       }
+        span:last-of-type{
+        
+            text-decoration:line-through;
+                
+        }
+        
+    }
+   
+   
+}

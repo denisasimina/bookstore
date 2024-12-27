@@ -1,0 +1,396 @@
+.header {
+  height: 100%;
+  box-shadow: $shadow-1;
+}
+//.ad--------------------------------------------------------------
+.ad {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background: $color-primary;
+  background-size: cover;
+ 
+
+  h1 {
+  
+    margin-left: 30px;
+      color: $white;
+ 
+      font-size: 24px;
+  }
+
+  .logo {
+      width: 190px;
+      height: 140px;
+      margin-left: -19px;
+  }
+}
+//.top--------------------------------------------------------------
+.top {
+    background-color: $color-secondary;
+
+    &_container {
+        max-width: 95%;
+        text-align: center;
+        display: flex;
+      
+        padding: 5px;
+        margin: 0 auto;
+        justify-content: flex-end;
+    }
+
+    &_list {
+        position: relative;
+        display:flex;
+        gap: 15px;
+
+     
+
+        li {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            .cart {
+              display: flex;
+              align-items: center;
+              margin-top:2px;
+              margin-right:10px ;
+              padding: 0;
+              position:relative;
+          
+              svg {
+                width: 30px;
+                height:25px;
+              }
+          
+              span {
+               color: aliceblue;
+                box-sizing: border-box;
+                width:15px;
+                height: 15px;
+                font-size: 11px;
+                background-color:$color-primary;
+                border-radius: 15px;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                position:absolute;
+                right:-8px;
+                top:-5px;
+                text-align: center;
+              
+          
+           
+              }
+            }
+
+            &:hover{
+                color: black;
+
+                svg{
+                    fill:black;
+                }
+                  
+               }
+
+            &::after {
+                content: "";
+                position: absolute;
+                transform: translateY(-50%);
+                width: 1px; 
+                right: -8px;
+                top: 50%;
+                height: 20px;
+                background-color: black;
+            }
+
+            &:last-of-type{
+                &::after{
+                    display: none;
+
+                }
+            }
+            .flex {
+                gap: 15px;
+                display: flex;
+                align-items: center;
+            }
+
+            svg {
+                transform: scale(1.2);
+                margin-right: 3px;
+         
+            }
+        }
+    }
+
+    img {
+        width: 23px;
+        border-radius: 50px;
+    }
+
+    svg {
+        object-fit: cover;
+        width: 18px;
+        height: 18px;
+        fill: #666;
+    }
+
+  
+@media(max-width: 670px){
+
+    :nth-last-of-type(2),
+    :nth-last-of-type(3),
+    :nth-last-of-type(4){
+        display: none;
+
+    }
+    
+}
+}
+
+
+//.menu----------------------------------------------------------------------------------------------------
+.menu {
+    margin-bottom: 10px;
+    position: absolute;
+    top: 100%;
+    right: 20%;
+    width: 300px;
+
+    background-color: $grey;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Înlocuiește cu $shadow-1 dacă variabila e definită */
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    gap: 2px;
+    min-height: 200px;
+    
+  background-color: $white;
+  h2{
+    display: flex;
+    margin-top:10px;
+    justify-content: center;
+  }
+  
+  
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:15px;
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+      button{
+     
+        background-color:$white;
+        border:1px solid black;
+        border-radius: 50px;
+        height:40px;
+        width: 150px;
+       font-size: 20px;
+        color:black;
+      }
+
+      button:hover{
+        background-color: $color-primary;
+        color:$white;
+        border:none;
+
+
+      }
+    }
+  
+    .col {
+     
+    display: flex;
+      
+  flex-direction: column;
+  margin-left: 1px;    
+    
+h4{  display: flex;
+
+  justify-content: flex-start; 
+
+}
+p{
+  color:blue;
+  display: flex;
+margin-top: 10px;;
+justify-content: flex-start;   
+  
+}
+p:hover{
+text-decoration: underline;
+  
+}
+      
+    }
+  
+  
+    .menu_image {
+      
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      }
+  
+    .list {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      list-style: none;
+      gap: 10px;
+  
+      li {
+        cursor: pointer;
+        padding: 8px 16px;
+        transition: background-color 0.3s;
+      }
+  
+      li:hover {
+        background-color: $color-secondary;
+      }
+     
+    }
+  }
+ //.menuSearch -----------------------------------------------
+ .menuSearch {
+  display: flex;
+  align-items: center; /* Centrează elementele pe verticală */
+  justify-content: center;
+  gap: 15px; /* Distanța între logo, search și cart */
+background-color: $white;
+height: 50px;
+  .__container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Menține un spațiu controlat între elemente */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    img {
+      display: block;
+      max-width: 50px; /* Controlează dimensiunea logo-ului */
+      height: auto;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    box-sizing: border-box;
+    background-color: rgba(240,243,245,255);
+    height: 40px;
+    width:600px; 
+    border-radius: 50px;
+  
+
+
+    input {
+       height: 35px;
+       width:600px; 
+       margin: 0;
+       background-color:  rgba(240,243,245,255);
+      border:none;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 50px;
+      
+  
+    }
+ 
+  
+    .icon_search {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      height: 40px;
+      width:90px;
+      background-color:$color-primary;
+      color: aliceblue;
+      border-radius: 50px;
+      justify-content: center;
+    
+      
+   
+    
+      svg {
+      
+        width: 30px;
+       
+      }
+    }
+
+    .icon_search:hover{
+      background-color: rgba(76, 1, 168, 1);;
+    }
+  }
+
+.search:hover{
+
+    background-color: $white;
+    input{
+      background-color: $white;
+    }
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+  input:focus{
+    border:none;
+    outline:none;
+  }
+
+
+
+  .cart {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position:relative;
+
+    svg {
+      width: 30px;
+      height:25px;
+    }
+
+    span {
+     color: aliceblue;
+      box-sizing: border-box;
+      width:15px;
+      height: 15px;
+      font-size: 11px;
+      background-color:$color-primary;
+      border-radius: 15px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      position:absolute;
+      right:-8px;
+      top:-5px;
+      text-align: center;
+    
+
+ 
+    }
+  }
+}
+

@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/91K0IKmnHTL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 16.99,
+    "discount": 10
+  },
+  {
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/71-5HzdQcdL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 15.99,
+    "discount": 12
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/71k7w2k6KxL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 13.99,
+    "discount": 8
+  },
+  {
+    "title": "Outliers: The Story of Success",
+    "author": "Malcolm Gladwell",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/91M4Qk-t97L._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 14.99,
+    "discount": 15
+  },
+  {
+    "title": "Grit: The Power of Passion and Perseverance",
+    "author": "Angela Duckworth",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/71bK5a80F3L._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 16.99,
+    "discount": 10
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/71bXrTKyf8L._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 18.99,
+    "discount": 15
+  },
+  {
+    "title": "The Happiness Hypothesis",
+    "author": "Jonathan Haidt",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/91lAq+rtksL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 19.99,
+    "discount": 20
+  },
+  {
+    "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+    "author": "Susan Cain",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/81zrfz3sAXL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 16.49,
+    "discount": 10
+  },
+  {
+    "title": "The Four Agreements",
+    "author": "Don Miguel Ruiz",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/81oEw8wHkzL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 9.99,
+    "discount": 5
+  },
+  {
+    "title": "Drive: The Surprising Truth About What Motivates Us",
+    "author": "Daniel H. Pink",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/91z8gfw3F4L._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 14.49,
+    "discount": 12
+  },
+  {
+    "title": "Daring Greatly",
+    "author": "Brené Brown",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/81tLACuHv3L._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 18.49,
+    "discount": 15
+  },
+  {
+    "title": "Thinking Like a Psychologist",
+    "author": "Jennifer L. E. Koval",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/91UPqMmzN4L._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 12.99,
+    "discount": 10
+  },
+  {
+    "title": "Blink: The Power of Thinking Without Thinking",
+    "author": "Malcolm Gladwell",
+    "category_name": "Psychology",
+    "image": "https://m.media-amazon.com/images/I/91blwZ5l6kL._AC_UL480_FMwebp_QL65_.jpg",
+    "price": 13.49,
+    "discount": 8
+  }
+]

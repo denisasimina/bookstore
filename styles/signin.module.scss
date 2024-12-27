@@ -1,0 +1,179 @@
+.login{
+
+
+    position:relative;
+     overflow: hidden;
+     display:flex;
+     justify-content: center;
+     background-color:$white;
+     &__container{
+
+        padding :3rem;
+        .login__form{
+
+            h1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:20px;
+                font-size:35px;
+            }
+            .buttons{
+                display:flex;
+                flex-direction: row;
+              gap:10px;
+              justify-content: center;
+           
+            
+            }
+            
+
+        }
+     }
+     &__header{
+        display:flex;
+
+flex-direction: row;
+        display:flex;
+align-items: center;
+justify-content: center;
+
+margin-bottom:1px;
+span{
+    display: flex;
+    margin:5px;
+    font-size: 20px;
+    justify-content: center;
+  
+}
+
+
+
+
+
+
+.back__svg{
+
+    width:40px;
+    height: 40px;
+    border:1px solid $white;
+    background-color: $white;
+    border-radius: 50%;
+    display:grid;
+    place-items: center;
+    cursor:pointer;
+
+    svg{
+        width:20px;
+        height:20px;
+    }
+
+
+  
+}
+     }
+}
+.back__svg:hover{
+    border:2px solid rgb(15, 15, 219);
+}
+
+//login_social---------------------
+.login_socials{
+
+ 
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.or{
+    display:flex;
+    font-size: 18px;
+    color:gray;
+    align-items: center;
+
+}
+
+.or::before {
+    content: ""; 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  background-color: gray;
+  
+    width: 100px;
+    height: 2px;
+
+}
+.or::after {
+    content: ""; 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  background-color: gray;
+  
+    width: 100px;
+    height: 2px;
+
+}
+img{
+
+    width:20px;
+
+    
+    
+}
+button{
+    display: flex;
+    justify-content: center;
+    margin:5px;
+   box-sizing: border-box;
+   height: 43px;
+   width:270px;
+   border-radius: 50px;
+   border:1px solid gray;
+   background-color: $white;
+   align-items: center;
+cursor:pointer;
+font-size: 20px;
+ 
+}
+button:hover{
+    border:2px solid black;
+      }
+}
+
+
+//.forget---------------------------
+.forget{
+
+    display:flex;
+    
+    p{
+color:blue;
+text-decoration: underline;
+margin:10px;
+    }
+}
+
+
+//test
+
+.error{
+
+
+    display: flex;
+     color:blue;
+     font-size:40px;
+
+  }
+
+
+.fr{
+    display: flex;
+    color:blue;
+    font-size:40px;
+
+position:absolute;
+right: 10%;
+  }
