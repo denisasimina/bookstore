@@ -16,6 +16,7 @@ export default function Category({ category,products,selected }) {
                   products.map((product)=>
                   (
                   <CardProduct 
+                  key={product._id} 
                   product={product}
                   selected={selected} />  )
                 )}
