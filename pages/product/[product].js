@@ -90,7 +90,7 @@ export default function ProductPage({ products,carts }) {
             <h2>{product.author}</h2>
             {product.summary?(<p>
             { product.summary}
-            </p>):(<p>"summary"</p>)}
+            </p>):(<p>summary</p>)}
           </div>
 
           <div className={styles.details}>
