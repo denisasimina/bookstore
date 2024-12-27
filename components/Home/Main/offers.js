@@ -46,7 +46,7 @@ const[loading,setLoading]=useState(false)
         className={styles.swiper1}
       >
         {images.map((book) => (
-          <SwiperSlide>
+          <SwiperSlide key={book._id}>
             <img src={book.image} onClick={()=>handleImage(book._id)}/>
           </SwiperSlide>
         ))}
