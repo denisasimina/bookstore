@@ -12,7 +12,7 @@ import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import calculateTotal from "./cartSum"; // Importă funcția de calcul
 import { useRouter } from "next/router";
 
-
+import Image from "next/image";
 
 export default function Cart_Comp({ carts, products}) {
   const { data: session } = useSession();

@@ -24,7 +24,7 @@ export default function MyOrders({ myorder }) {
                     <h1>My Orders</h1>
                     <ul>
                         {myorder.carts.map((cart,index) => (
-                            <Order index={index} cart={cart} />
+                            <Order key={cart._id || index} index={index} cart={cart} />
                         ))}
                     </ul>
                 </div>
