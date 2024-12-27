@@ -41,8 +41,9 @@ export default function FlashDeals() {
     {
         flashDealsArray.map((product=>
         ( 
-            <SwiperSlide>
-                <FlashCards product={product} />
+            <SwiperSlide key={product._id}>
+                <FlashCards 
+                product={product} />
                 {/* <FlashCards product={product} key={i}/> */}
             </SwiperSlide>
            
