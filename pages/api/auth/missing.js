@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Cart from "./model/Cart"
+import Cart from '../../../models/Cart';
 
 const addMissingQuantityField = async () => {
   await mongoose.connect('mongodb://localhost:27017/<database_name>', {
