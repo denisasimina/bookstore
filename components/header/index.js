@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import Top from "./Top";
-import Ad from "./ad";
+ import Ad from "./Ad";
 import MenuSearch from "./MenuSearch";
 import { useEffect } from "react";
 import { useState } from "react";
