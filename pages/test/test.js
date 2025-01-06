@@ -3,7 +3,8 @@ import Product from '../../models/Product';
 import Category from '../../models/Category';
 import React from 'react';
 // import { useDispatch } from 'react-redux';
-import { addItemToCart } from '../../store/cartSlice';// Importă acțiunea din cartSlice
+import { addToCart} from '../../store/cartSlice';
+
 import db from '../../utils/db';
 // ProductList.js
 
@@ -12,7 +13,7 @@ const ProductList = ({ products }) => {
 
   const handleAddToCart = (product) => {
     // Când se apasă pe un produs, adăugăm produsul în coș
-    dispatch(addItemToCart({
+    dispatch(addToCart({
       productId: product.id,
       title: product.title,
       price: product.price,
