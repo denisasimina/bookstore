@@ -2,7 +2,7 @@
 import Product from '../../models/Product';
 import Category from '../../models/Category';
 import React from 'react';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import { addItemToCart } from '../../store/cartSlice';// Importă acțiunea din cartSlice
 import db from '../../utils/db';
 // ProductList.js
