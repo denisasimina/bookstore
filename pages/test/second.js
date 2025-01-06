@@ -36,3 +36,10 @@
 // };
 
 // export default Cart;
+
+export default function Second()
+{
+    return(
+        <></>
+    )
+}
