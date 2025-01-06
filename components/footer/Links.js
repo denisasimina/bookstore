@@ -3,14 +3,14 @@ import styles from "./styles.module.scss";
 export default function Links() {
   return (
     <div className={styles.footer__links}>
-      {links.map((link) => (
+      {links.map((link,index) => (
         <ul 
-        // key={index}
+         key={index}
         >
           <b>{link.heading}</b>
-          {link.links.map((link) => (
+          {link.links.map((link,subIndex) => (
              <li 
-            // key={subIndex}
+            key={subIndex}
             >
             <Link href={link.link}>{link.name}</Link>
             </li>
