@@ -28,7 +28,9 @@ const initialValues = {
 
 export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log('Providers:', providers);
-
+  console.log("GITHUB_ID:", process.env.GITHUB_ID);
+  console.log("GOOGLE_ID:", process.env.GOOGLE_ID);
+  console.log("TWITTER_ID:", process.env.TWITTER_ID);
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password, login_error } = user;
