@@ -28,28 +28,7 @@ const initialValues = {
 
 export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log('Providers:', providers);
-  console.log("Environment Variables:");
-  console.log("MONGODB_URL:", process.env.MONGODB_URL || "Not defined");
-  console.log("JWT_SECRET:", process.env.JWT_SECRET || "Not defined");
-  console.log("NEXT_URL:", process.env.NEXT_URL || "Not defined");
-  console.log("BASE_URL:", process.env.BASE_URL || "Not defined");
-  console.log("GITHUB_ID:", process.env.GITHUB_ID || "Not defined");
-  console.log("GITHUB_SECRET:", process.env.GITHUB_SECRET || "Not defined");
-  console.log("GOOGLE_ID:", process.env.GOOGLE_ID || "Not defined");
-  console.log("GOOGLE_SECRET:", process.env.GOOGLE_SECRET || "Not defined");
-  console.log("TWITTER_ID:", process.env.TWITTER_ID || "Not defined");
-  console.log("TWITTER_SECRET:", process.env.TWITTER_SECRET || "Not defined");
-  console.log("T_ID:", process.env.T_ID || "Not defined");
-  console.log("T_SECRET:", process.env.T_SECRET || "Not defined");
-  console.log("AUTH0_CLIENT_ID:", process.env.AUTH0_CLIENT_ID || "Not defined");
-  console.log("AUTH0_CLIENT_SECRET:", process.env.AUTH0_CLIENT_SECRET || "Not defined");
-  console.log("AUTH0_ISSUER:", process.env.AUTH0_ISSUER || "Not defined");
-  console.log("ACTIVATION_TOKEN_SECRET:", process.env.ACTIVATION_TOKEN_SECRET || "Not defined");
-  console.log("RESET_TOKEN_SECRET:", process.env.RESET_TOKEN_SECRET || "Not defined");
-  console.log("MAILING_SERVICE_CLIENT_ID:", process.env.MAILING_SERVICE_CLIENT_ID || "Not defined");
-  console.log("MAILING_SERVICE_CLIENT_SECRET:", process.env.MAILING_SERVICE_CLIENT_SECRET || "Not defined");
-  console.log("MAILING_SERVICE_CLIENT_REFRESH_TOKEN:", process.env.MAILING_SERVICE_CLIENT_REFRESH_TOKEN || "Not defined");
-  console.log("SENDER_EMAIL_ADDRESS:", process.env.SENDER_EMAIL_ADDRESS || "Not defined");
+  console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GOOGLE_ID);
   
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password, login_error } = user;
