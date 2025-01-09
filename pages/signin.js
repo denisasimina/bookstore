@@ -28,7 +28,7 @@ const initialValues = {
 
 export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log('Providers:', providers);
-  // console.log("GITHUB_ID (Server):", process.env.GITHUB_ID || "Not defined");
+ console.log("GITHUB_ID (Server):", process.env.GITHUB_ID || "Not defined");
   // console.log("GOOGLE_ID (Server):", process.env.GOOGLE_ID || "Not defined");
 
   
