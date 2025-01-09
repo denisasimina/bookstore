@@ -221,7 +221,7 @@ if (session) {
 
   const csrfToken = await getCsrfToken(context);
   const providers = await getProviders();
-
+  console.log(providers,"KKKKKKKKKKKKKKKKKKKKKKKKK")
   return {
     props: { 
       providers: providers ? Object.values(providers) : [], 
