@@ -28,9 +28,9 @@ const initialValues = {
 
 export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log('Providers:', providers);
-  console.log("GITHUB_ID (Server):", process.env.GITHUB_ID || "Not defined");
-  console.log("GOOGLE_ID (Server):", process.env.GOOGLE_ID || "Not defined");
-  console.log("TWITTER_ID (Server):", process.env.TWITTER_ID || "Not defined");
+  // console.log("GITHUB_ID (Server):", process.env.GITHUB_ID || "Not defined");
+  // console.log("GOOGLE_ID (Server):", process.env.GOOGLE_ID || "Not defined");
+
   
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password, login_error } = user;
