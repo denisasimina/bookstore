@@ -224,7 +224,7 @@ if (session) {
   console.log(providers,"KKKKKKKKKKKKKKKKKKKKKKKKK")
   return {
     props: { 
-      providers: providers ? Object.values(providers) : [], 
+      providers: providers , 
       csrfToken, 
       callbackUrl 
     },
