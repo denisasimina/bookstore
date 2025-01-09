@@ -27,7 +27,8 @@ const initialValues = {
 
 
 export default function Signin({ providers,callbackUrl,csrfToken }) {
-  
+  console.log('Providers:', providers);
+
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password, login_error } = user;
