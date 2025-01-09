@@ -205,7 +205,7 @@ export async function getServerSideProps(context) {
  const session = await getSession({ req });
  const callbackUrl = query.callbackUrl || "/";
 
-
+ console.log("GITHUB_ID (Server):", process.env.GITHUB_ID || "Not defined");
 
   
 if (session) {
