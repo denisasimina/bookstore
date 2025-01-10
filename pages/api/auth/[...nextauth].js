@@ -1,13 +1,12 @@
 import NextAuth from 'next-auth';
 import TwitterProvider from 'next-auth/providers/twitter';
-import AppleProvider from 'next-auth/providers/apple';
-import FacebookProvider from 'next-auth/providers/facebook';
+
 import GoogleProvider from 'next-auth/providers/google';
 import { MongoDBAdapter } from '@auth/mongodb-adapter';
 import clientPromise from "./lib/mongodb";
 import GitHubProvider from "next-auth/providers/github";
 import Auth0Provider from "next-auth/providers/auth0";
-import User from "../../../models/User"; // Modelul ar trebui importat cu literă mare
+import User from "../../../models/User";
 import bcrypt from "bcrypt";
 import db from '../../../utils/db';
 import CredentialsProvider from "next-auth/providers/credentials";
@@ -56,31 +55,24 @@ export default NextAuth({
     }),
 
 
-    GitHubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET
-    }),
-    // AppleProvider({
-    //   clientId: process.env.APPLE_ID,
-    //   clientSecret: process.env.APPLE_SECRET
+    // GitHubProvider({
+    //   clientId: process.env.GITHUB_ID,
+    //   clientSecret: process.env.GITHUB_SECRET
     // }),
-    // FacebookProvider({
-    //   clientId: process.env.FACEBOOK_ID,
-    //   clientSecret: process.env.FACEBOOK_SECRET
-    // }),
+
     GoogleProvider({
       clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET
     }),
-    TwitterProvider({
-      clientId: process.env.TWITTER_ID,
-      clientSecret: process.env.TWITTER_SECRET
-    }),
-    Auth0Provider({
-      clientId: process.env.AUTH0_CLIENT_ID,
-      clientSecret: process.env.AUTH0_CLIENT_SECRET,
-      issuer: process.env.AUTH0_ISSUER
-    }),
+    // TwitterProvider({
+    //   clientId: process.env.TWITTER_ID,
+    //   clientSecret: process.env.TWITTER_SECRET
+    // }),
+    // Auth0Provider({
+    //   clientId: process.env.AUTH0_CLIENT_ID,
+    //   clientSecret: process.env.AUTH0_CLIENT_SECRET,
+    //   issuer: process.env.AUTH0_ISSUER
+    // }),
   ],
 
 
