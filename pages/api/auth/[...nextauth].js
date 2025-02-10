@@ -55,19 +55,19 @@ export default NextAuth({
     }),
 
 
-    // GitHubProvider({
-    //   clientId: process.env.GITHUB_ID,
-    //   clientSecret: process.env.GITHUB_SECRET
-    // }),
+    GitHubProvider({
+      clientId: process.env.NEXT_PUBLIC_GITHUB_ID,
+      clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET
+    }),
 
     GoogleProvider({
       clientId: process.env.NEXT_PUBLIC_GOOGLE_ID,
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET
     }),
-    // TwitterProvider({
-    //   clientId: process.env.TWITTER_ID,
-    //   clientSecret: process.env.TWITTER_SECRET
-    // }),
+    TwitterProvider({
+      clientId: process.env.NEXT_PUBLIC_TWITTER_ID,
+      clientSecret: process.env.NEXT_PUBLIC_TWITTER_SECRET
+    }),
     // Auth0Provider({
     //   clientId: process.env.AUTH0_CLIENT_ID,
     //   clientSecret: process.env.AUTH0_CLIENT_SECRET,
