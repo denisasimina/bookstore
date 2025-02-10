@@ -27,6 +27,7 @@ const initialValues = {
 
 
 export default function Signin({ providers,callbackUrl,csrfToken }) {
+  console.log('wooow');
   console.log('Providers:', providers);
   console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GOOGLE_ID);
   console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GOOGLE_SECRET);
