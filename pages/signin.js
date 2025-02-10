@@ -220,28 +220,23 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
 
 
 export async function getServerSideProps(context) {
-
+  console.log("getServerSideProps a fost apelată!"); // <- TEST
   const { req, query } = context;
- const session = await getSession({ req });
- const callbackUrl = query.callbackUrl || "/";
+  const session = await getSession({ req });
+  const callbackUrl = query.callbackUrl || "/";
 
-
-
-  
-if (session) {
+  if (session) {
     return {
       redirect: {
-        destination: callbackUrl,  
+        destination: callbackUrl,
         permanent: false,
       },
     };
   }
 
-
-
   const csrfToken = await getCsrfToken(context);
   const providers = await getProviders();
-  console.log("PROVIDERS LIST:", providers); // <- Verifică output-ul în consolă
+  console.log("PROVIDERS LIST:", providers); // <- TEST FINAL
   return {
     props: { 
       providers: providers ? Object.values(providers) : [], 
