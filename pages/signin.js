@@ -34,7 +34,7 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log("GITHUB_ID:", process.env.NEXT_PUBLIC_GITHUB_ID);
   console.log("GITHUB_SECRET:", process.env.NEXT_PUBLIC_GITHUB_SECRET);
    console.log("MONGODB_URL",process.env.MONGODB_URL)
-   console.log("BASE_URL",process.env.BASE_URL)
+   console.log("BASE_URL",process.env.NEXT_PUBLIC_BASE_URL)
   console.log("NEXT_PUBLIC_AUTH0_CLIENT_ID",process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID)
   console.log("NEXT_PUBLIC_ACTIVATION_TOKEN_SECRET",process.env.NEXT_PUBLIC_ACTIVATION_TOKEN_SECRET)
   console.log("NEXT_PUBLIC_MAILING_SERVICE_CLIENT_REFRESH_TOKEN",process.env.NEXT_PUBLIC_MAILING_SERVICE_CLIENT_REFRESH_TOKEN)
@@ -48,7 +48,7 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log("NEXT_PUBLIC_SENDER_EMAIL_ADDRESS",process.env.NEXT_PUBLIC_SENDER_EMAIL_ADDRESSL)
   console.log("NEXT_PUBLIC_TWITTER_SECRET",process.env.NEXT_PUBLIC_TWITTER_SECRET)
   console.log("NEXT_PUBLIC_TWITTER_ID",process.env.NEXT_PUBLIC_TWITTER_ID)
-  console.log("NEXT_URL",process.env.NEXT_URL)
+  console.log("NEXT_URL",process.env.NEXT_PUBLIC_NEXT_URL)
 
   console.log("NEXT_PUBLIC_JWT_SECRET",process.env.NEXT_PUBLIC_JWT_SECRET)
   
