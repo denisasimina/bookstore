@@ -30,9 +30,26 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log('wooow');
   console.log('Providers:', providers);
   console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GOOGLE_ID);
-  console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GOOGLE_SECRET);
-  console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GITHUB_ID);
-  console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GITHUB_SECRET);
+  console.log("GOOGLE_SECRET:", process.env.NEXT_PUBLIC_GOOGLE_SECRET);
+  console.log("GITHUB_ID:", process.env.NEXT_PUBLIC_GITHUB_ID);
+  console.log("GITHUB_SECRET:", process.env.NEXT_PUBLIC_GITHUB_SECRET);
+  console.log("MONGODB_URL",process.env.MONGODB_URL)
+  console.log("BASE_URL",process.env.BASE_URL)
+  console.log("NEXT_PUBLIC_AUTH0_CLIENT_ID",process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID)
+  console.log("NEXT_PUBLIC_ACTIVATION_TOKEN_SECRET",process.env.NEXT_PUBLIC_ACTIVATION_TOKEN_SECRET)
+  console.log("NEXT_PUBLIC_MAILING_SERVICE_CLIENT_REFRESH_TOKEN",process.env.NEXT_PUBLIC_MAILING_SERVICE_CLIENT_REFRESH_TOKEN)
+  console.log("NEXT_PUBLIC_MAILING_SERVICE_CLIENT_ID",process.env.NEXT_PUBLIC_MAILING_SERVICE_CLIENT_ID)
+  console.log("NEXT_PUBLIC_AUTH0_ISSUER",process.env.NEXT_PUBLIC_AUTH0_ISSUER)
+  console.log("NEXT_PUBLIC_T_SECRET",process.env.NEXT_PUBLIC_T_SECRETL)
+  console.log("NEXT_PUBLIC_T_ID",process.env.NEXT_PUBLIC_T_ID)
+  console.log("NEXT_PUBLIC_RESET_TOKEN_SECRETL",process.env.NEXT_PUBLIC_RESET_TOKEN_SECRET)
+  console.log("NEXT_PUBLIC_AUTH0_CLIENT_SECRET",process.env.NEXT_PUBLIC_AUTH0_CLIENT_SECRET)
+  console.log("NEXT_PUBLIC_JWT_SECRET",process.env.NEXT_PUBLIC_JWT_SECRET)
+  console.log("NEXT_PUBLIC_SENDER_EMAIL_ADDRESS",process.env.NEXT_PUBLIC_SENDER_EMAIL_ADDRESSL)
+  console.log("NEXT_PUBLIC_TWITTER_SECRET",process.env.NEXT_PUBLIC_TWITTER_SECRET)
+  console.log("NEXT_PUBLIC_TWITTER_ID",process.env.NEXT_PUBLIC_TWITTER_ID)
+  console.log("NEXT_URL",process.env.NEXT_URL)
+  
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password, login_error } = user;
 
