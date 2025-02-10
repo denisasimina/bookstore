@@ -16,11 +16,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 
 db.connect_Db();
 
-console.log("GITHUB_ID:", process.env.NEXT_PUBLIC_GITHUB_ID);
-console.log("GOOGLE_ID:", process.env.NEXT_PUBLIC_GOOGLE_ID);
-console.log("TWITTER_ID:", process.env.NEXT_PUBLIC_TWITTER_ID);
-console.log("AUTH0_CLIENT_ID:", process.env.AUTH0_CLIENT_ID);
-console.log("JWT_SECRET:", process.env.NEXT_PUBLIC_JWT_SECRET);
+
 export default NextAuth({
   adapter: MongoDBAdapter(clientPromise),
 
