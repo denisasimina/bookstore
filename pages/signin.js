@@ -241,7 +241,7 @@ if (session) {
 
   const csrfToken = await getCsrfToken(context);
   const providers = await getProviders();
-  console.log(providers,"KKKKKKKKKKKKKKKKKKKKKKKKK")
+  console.log("PROVIDERS LIST:", providers); // <- Verifică output-ul în consolă
   return {
     props: { 
       providers: providers ? Object.values(providers) : [], 
