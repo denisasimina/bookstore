@@ -33,7 +33,7 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log("GOOGLE_SECRET:", process.env.NEXT_PUBLIC_GOOGLE_SECRET);
   console.log("GITHUB_ID:", process.env.NEXT_PUBLIC_GITHUB_ID);
   console.log("GITHUB_SECRET:", process.env.NEXT_PUBLIC_GITHUB_SECRET);
-  // console.log("MONGODB_URL",process.env.MONGODB_URL)
+   console.log("MONGODB_URL",process.env.MONGODB_URL)
   // console.log("BASE_URL",process.env.BASE_URL)
   // console.log("NEXT_PUBLIC_AUTH0_CLIENT_ID",process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID)
   // console.log("NEXT_PUBLIC_ACTIVATION_TOKEN_SECRET",process.env.NEXT_PUBLIC_ACTIVATION_TOKEN_SECRET)
