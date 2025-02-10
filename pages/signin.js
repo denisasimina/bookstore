@@ -49,6 +49,8 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
   console.log("NEXT_PUBLIC_TWITTER_SECRET",process.env.NEXT_PUBLIC_TWITTER_SECRET)
   console.log("NEXT_PUBLIC_TWITTER_ID",process.env.NEXT_PUBLIC_TWITTER_ID)
   console.log("NEXT_URL",process.env.NEXT_URL)
+
+  console.log("NEXT_PUBLIC_JWT_SECRET",process.env.NEXT_PUBLIC_JWT_SECRET)
   
   const [user, setUser] = useState(initialValues);
   const { login_email, login_password, login_error } = user;
