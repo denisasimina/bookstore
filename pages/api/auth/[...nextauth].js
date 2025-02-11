@@ -35,20 +35,29 @@ export default NextAuth({
 
 
 
-      async authorize(credentials, req) {
-        await db.connect_Db(); 
-        const email = credentials.email;
-        const password = credentials.password;
+      // async authorize(credentials, req) {
+      //   await db.connect_Db(); 
+      //   const email = credentials.email;
+      //   const password = credentials.password;
 
-        const user = await User.findOne({ email });
+      //   const user = await User.findOne({ email });
 
-        if (user) {
-          return SignInUser({ password, user });
-        } else {
-          throw new Error('This email does not exist');
+      //   if (user) {
+      //     return SignInUser({ password, user });
+      //   } else {
+      //     throw new Error('This email does not exist');
+      //   }
+      // }
+
+      async session({ session, token }) {
+        if (token.sub) {
+          let user = await User.findById(token.sub);
+          session.user._id = user?._id.toString();
+          session.user.role = user?.role || "user"; // ✅ Acum setează corect rolul
         }
-      }
-
+        return session;
+      },
+      
 
 
 
