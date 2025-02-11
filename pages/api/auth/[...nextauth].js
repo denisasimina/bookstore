@@ -69,9 +69,9 @@ export default NextAuth({
       clientSecret: process.env.NEXT_PUBLIC_TWITTER_SECRET
     }),
     Auth0Provider({
-      clientId: process.env.AUTH0_CLIENT_ID,
-      clientSecret: process.env.AUTH0_CLIENT_SECRET,
-      issuer: process.env.AUTH0_ISSUER
+      clientId: process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID,
+      clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
+      issuer: process.env.NEXT_PUBLIC_ISSUER
     }),
   ],
 
