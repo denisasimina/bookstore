@@ -77,14 +77,30 @@ export default NextAuth({
 
 
 
-  callbacks:{
-    async session({session,token}){
-      let user=await User.findById(token.sub);
-      session.user._id=token.sub||user._id.toString();
-      session.user.role || "user";
-      return session
+  // callbacks:{
+  //   async session({session,token}){
+  //     let user=await User.findById(token.sub);
+  //     session.user._id=token.sub||user._id.toString();
+  //     session.user.role || "user";
+  //     return session
+  //   },
+  // },
+  callbacks: {
+    async session({ session, token }) {
+      try {
+        let user = await User.findById(token.sub);
+        if (user) {
+          session.user._id = token.sub || user._id.toString();
+          session.user.role = session.user.role || "user";
+        }
+        return session;
+      } catch (error) {
+        console.error("Error fetching user:", error);
+        return session;
+      }
     },
   },
+  
 
 
 
