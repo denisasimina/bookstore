@@ -19,7 +19,7 @@ db.connect_Db();
 
 export default NextAuth({
   adapter: MongoDBAdapter(clientPromise),
-
+  debug: true,
   providers: [
 
 
