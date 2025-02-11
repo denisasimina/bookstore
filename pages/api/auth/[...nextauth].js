@@ -90,6 +90,7 @@ export default NextAuth({
 
   pages: {
     signIn: "/signin",
+    error: '/auth/error', // pagina de eroare
   },
   session: {
     strategy: "jwt",
