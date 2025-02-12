@@ -20,9 +20,9 @@ export default function Copyright() {
 }
 
 const data = [
-    { name: "Privacy Policy", link: "" },
-    { name: "Privacy & Cookies", link: "" },
-    { name: "Manage Cookies", link: "" },
-    { name: "Terms of Service", link: "" },
-    { name: "Accessibility Statement", link: "" },
+    { name: "Privacy Policy", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/privacy-policy" },
+    { name: "Privacy & Cookies", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/privacy-policy" },
+    { name: "Manage Cookies", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/manage-cookies" },
+    { name: "Terms of Service", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/terms-of-service" },
+    { name: "Accessibility Statement", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/accessibility-statement" },
 ];
