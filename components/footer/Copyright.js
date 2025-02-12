@@ -24,5 +24,5 @@ const data = [
     { name: "Privacy & Cookies", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/privacy-policy" },
     { name: "Manage Cookies", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/manage-cookies" },
     { name: "Terms of Service", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/terms-of-service" },
-    { name: "Accessibility Statement", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/accessibility-statement" },
+    { name: "User Data Deletion", link: "https://bookstore-simina-denisa-elenas-projects.vercel.app/data-deletion" },
 ];
