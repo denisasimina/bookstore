@@ -71,8 +71,8 @@ export default NextAuth({
       clientSecret: process.env.NEXT_PUBLIC_TWITTER_SECRET
     }),
     FacebookProvider({
-      clientId: process.env.NEXT_PUBLIC_GITHUB_ID,
-      clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET
+      clientId: process.env.NEXT_PUBLIC_FACEBOOK_ID,
+      clientSecret: process.env.NEXT_PUBLIC_FACEBOOK_SECRET
     }),
   ],
 
