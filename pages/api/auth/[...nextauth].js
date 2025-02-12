@@ -10,8 +10,10 @@ import User from "../../../models/User";
 import bcrypt from "bcrypt";
 import db from '../../../utils/db';
 import CredentialsProvider from "next-auth/providers/credentials";
+import FacebookProvider from "next-auth/providers/facebook";
 
 
+import LinkedInProvider from "next-auth/providers/linkedin";
 
 
 db.connect_Db();
@@ -68,10 +70,9 @@ export default NextAuth({
       clientId: process.env.NEXT_PUBLIC_TWITTER_ID,
       clientSecret: process.env.NEXT_PUBLIC_TWITTER_SECRET
     }),
-    Auth0Provider({
-      clientId: process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID,
-      clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
-      issuer: process.env.NEXT_PUBLIC_ISSUER
+    FacebookProvider({
+      clientId: process.env.NEXT_PUBLIC_GITHUB_ID,
+      clientSecret: process.env.NEXT_PUBLIC_GITHUB_SECRET
     }),
   ],
 
