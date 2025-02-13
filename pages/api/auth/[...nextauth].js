@@ -37,21 +37,36 @@ export default NextAuth({
 
 
 
+      // async authorize(credentials, req) {
+      //   await db.connect_Db(); 
+      //   const email = credentials.email;
+      //   const password = credentials.password;
+
+      //   const user = await User.findOne({ email });
+
+      //   if (user) {
+      //     return SignInUser({ password, user });
+      //   } else {
+      //     throw new Error('This email does not exist');
+      //   }
+      // }
+
       async authorize(credentials, req) {
-        await db.connect_Db(); 
+        console.log("Credențiale primite:", credentials); // Log credențialele
+        await db.connect_Db();
         const email = credentials.email;
         const password = credentials.password;
-
+      
         const user = await User.findOne({ email });
-
+        console.log("Utilizator găsit:", user); // Log utilizatorul găsit
+      
         if (user) {
           return SignInUser({ password, user });
         } else {
-          throw new Error('This email does not exist');
+          throw new Error('Acest email nu există');
         }
       }
-
-
+      
 
 
     }),
