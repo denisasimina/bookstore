@@ -77,39 +77,27 @@ export default function Signin({ providers,callbackUrl,csrfToken }) {
 
 
   const signInHandler = async (values, { setSubmitting }) => {
-    setLoading(true);
     setSubmitting(true);
-
-
-
+    console.log("Date trimise:", values); // Log datele trimise
+  
     const options = {
       redirect: false,
       email: values.login_email,
       password: values.login_password,
     };
-
-
-
-
-
+  
     const res = await signIn("credentials", options);
-
-
-
-    setLoading(false);
+    console.log("Rezultatul autentificării:", res); // Log rezultatul autentificării
+  
     setSubmitting(false);
-
-
+  
     if (res.error) {
       setUser((prevUser) => ({ ...prevUser, login_error: res.error }));
-    }
-   else {
-      Router.push(callbackUrl ||  "/");
+    } else {
+      Router.push(callbackUrl || "/");
     }
   };
-
-
-
+  
 
 
 
