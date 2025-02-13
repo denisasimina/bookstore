@@ -39,10 +39,12 @@
 }
 
 .offers {
+ 
   grid-area: offers;
   padding: 10px;
   height: 250px; /* Poți ajusta această valoare */
   overflow: hidden;
+  
 }
 
 
@@ -105,6 +107,7 @@
     
 
     .container {
+     
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
       grid-template-areas:

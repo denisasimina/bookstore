@@ -1,7 +1,8 @@
 .footer {
+  display: flex;
     background-color: $color-secondary;
     color: black;
-
+ width:400%;
     .footer__container {
         display: flex;
         flex-direction: column; // Stack components vertically

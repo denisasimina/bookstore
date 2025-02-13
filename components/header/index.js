@@ -33,8 +33,8 @@ export default function Header({carts,quantity}) {
     return (
   
  <header className={styles.header}>
-    <Ad/>
- <Top carts={carts} quantity={quantity}/>
+    <Ad className={styles.ad}/>
+ <Top carts={carts} quantity={quantity} className={styles.top}/>
  {/* <MenuSearch/> */}
  </header>
      

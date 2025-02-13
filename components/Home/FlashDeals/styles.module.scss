@@ -6,7 +6,7 @@ width: 100%;
 background-color:orange;
 align-items: center;
 color:$white;
-
+width:400%;
 &_header{
     
 margin-left: 20px;
@@ -14,7 +14,12 @@ margin-left: 20px;
 
 
 }
-
+@media (max-width: 642px) {
+  .container {
+    display: block;
+    width: 400%;
+  }
+}
 //CARD-------------------------
 .cards{
 margin-top:10px;
